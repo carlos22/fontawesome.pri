@@ -23,7 +23,7 @@ function toLowerFirstLetter(string) {
 }
 
 lines.forEach(function(line) {
-    var rx = /^\$fa-var-([a-zA-Z][a-zA-Z0-9-]+): *\"([a-zA-Z0-9\\/_.]+)\"/;
+    var rx = /^\$fa-var-([a-zA-Z][a-zA-Z0-9-]+): *\"?([a-zA-Z0-9\\/_.]+)\"?/;
 
     var match = rx.exec(line);
     if (match != null) {
